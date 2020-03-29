@@ -1,0 +1,35 @@
+
+.grid {
+    display: grid;
+    /*Now this will distribute the elements inside the grid in two size equivalent columns*/
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-rows: auto;
+       
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+
+}
+
+.nested-grid > div{ /* The ">" pin-point that this style has no inheritance.*/
+    border: solid 1px black;
+    background: coral;
+    padding: 1em;
+}
+
+.nested-grid > div:hover{
+    border: solid 1px white;
+}
+
+.grid > div {background: #cc4c2c;
+    color: #500908;
+padding: 1em;}
+
+/*This style afect the div when the cursos is over it*/
+.grid > div:hover {
+    border: solid 1px #500908;
+}
