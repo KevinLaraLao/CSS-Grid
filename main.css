@@ -16,14 +16,19 @@
 
 .top-nav{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
 
 }
 
+.title-page {
+display: grid;
+}
 
 .title-page > header{
+    padding-left: 10px;
     display: grid;
-    align-items: baseline;
+    align-self: end;
+    font: bold 50px verdana;
 }
 
 
