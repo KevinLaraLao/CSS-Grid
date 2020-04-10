@@ -17,6 +17,7 @@
 .top-nav{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    padding-top: 30px;
 
 }
 
@@ -31,5 +32,30 @@ display: grid;
     font: bold 50px verdana;
 }
 
+.navigation-bar{
+    display: grid;
+}
+
+.menu{
+    display: grid;
+    align-self: end;
+}
+
+.menu ul{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 8fr;
+    list-style: none;
+
+}
+.menu li {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    display: grid;
+
+    font: bold 18px verdana;
+}
 
 
