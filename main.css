@@ -1,6 +1,6 @@
 
 .master-container{
-    border:  solid 1px red;
+    background-color: rgb(238, 152, 53);
         
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,7 +11,6 @@
 
 .masthead-header{
     grid-column:1/4 ;
-    border: solid 1px blue;  
     display: grid;
 
     /*Whit this the navigation bar keep its position even when you scroll down*/
@@ -22,8 +21,10 @@
 
 .top-nav{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.5fr 4fr;
     padding-top: 30px;
+    gap: 0.5em;
+    background-color: rgb(20, 20, 20);
 
 }
 
@@ -36,6 +37,8 @@ display: grid;
     display: grid;
     align-self: end;
     font: bold 50px verdana;
+    color: seashell;
+    margin-bottom: 10px;
 }
 
 .navigation-bar{
@@ -56,12 +59,14 @@ display: grid;
 
 }
 .menu li {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    display: grid;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 
     font: bold 18px verdana;
+    color: seashell;
+    margin-bottom: 15px;
 }
 
 .body-container{
@@ -69,13 +74,14 @@ display: grid;
     grid-column: 1/4;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: [row1-titular] 3fr auto;
+    background-color:black;
 }
 
 .upper-section{
     display: grid;
     grid-column: 1/4;
     grid-column-end: row1-titular;
-    border: solid 1px green;
+
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -89,10 +95,15 @@ display: grid;
 }
 
 .main-article img{
-    height: 800px;
-    width: 1200px;
-    border: solid 2px black;
-    margin: 10px;
+    height: 600px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.main-article h1{
+    font: bold 32px verdana;
+    color: cornsilk;
+    margin-top: 0px;
 }
 
 /*Change the opacity of pictures when the cursor hovers them*/
@@ -105,13 +116,45 @@ display: grid;
 
 .main-article:hover .overlay{
     opacity: 0.2;
+    border: solid 20px rgba(238, 152, 53, 0.5);
 }
 
+.sub-article:hover .overlay{
+    opacity: 0.2;
+    border: solid 10px rgba(238, 152, 53, 0.5);
+}
 
 .lower-section{
     display: grid;
     grid-column: 1/4;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 1em;
+    gap: 0.5em;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-top: double 10px rgb(238, 152, 53);
+    padding: 20px;
+
+}
+
+.sub-article{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.sub-article img {
+    display: grid;
+    height: 600px;
+    width: 320px;
+    
+}
+
+.sub-article h2{
+    display: grid;
+    text-align: center;
+    font: bold 28px verdana;
+    color: cornsilk;
 }
